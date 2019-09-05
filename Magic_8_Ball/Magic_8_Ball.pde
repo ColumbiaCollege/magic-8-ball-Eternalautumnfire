@@ -9,7 +9,6 @@ void setup() {
   size(900, 900);
   textAlign(CENTER, CENTER);
   textSize(20);
-  //frameRate(12);
   background(255);
   fill(0);
   noLoop();
