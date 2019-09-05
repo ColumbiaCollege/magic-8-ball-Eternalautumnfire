@@ -13,7 +13,7 @@ void setup() {
   fill(0);
   noLoop();
 }
-//redraws the 8-ball and begins cycling through possible answers to the question
+//Redraws the 8-ball and begins cycling through possible answers to the question
 void mousePressed() {
   redraw();
   background(255);
