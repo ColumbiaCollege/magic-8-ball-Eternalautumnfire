@@ -33,13 +33,13 @@ void mouseReleased() {
   background(255);
   fill(0);
   //Places instructive text center, top of the draw window
-  text("Ask another question.\n Then click to reveal your answer.", width/2, 100);
+  text("Ask another question.\n Hold to shake the 8-Ball.\n Release to reveal new asnwer.", width/2, 100);
   //Draws the revealed answer within the 8-ball
   ellipse(450, 450, width/2, height/2);
   fill(200);
   ellipse(500, 275, 75, 25);
   fill(#1400FF);
-  triangle(325, 350, 450, 575, 575, 350);
+  triangle(325, 369, 450, 594, 575, 369);
   fill(255);
   //Pulls words at random from the array to be displayed
   text(Magic[int (random(6))], width/2, 400);
