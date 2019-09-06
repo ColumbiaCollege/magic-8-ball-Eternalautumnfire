@@ -3,7 +3,7 @@
 
 //Sets up an array of words that can appear in the magic 8-ball
 String[] Magic = {"That result\n is unlikely", "The possibility\n is endless", "I don't appreciate\n your question", "No cookies for you", "Pet me,\n then ask again", "That's just wrong!"};
-//Sets img as a variable
+//"Acts like setting a variable" but stores the datatype "img" to be called/initialized later to load an image
 PImage img;
 
 //Settings for the program such as, text alingment, size, backroound, and fill.
