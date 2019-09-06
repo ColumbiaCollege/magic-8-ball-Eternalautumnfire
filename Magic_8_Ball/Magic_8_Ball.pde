@@ -20,7 +20,7 @@ void setup() {
 void mousePressed() {
   redraw();
   //Draws te image in the background and stretches it to the window size
-  image(img, 0,0,900,900);
+  image(img, 0, 0, 900, 900);
   fill(0);
   ellipse(450, 450, width/2, height/2);
   fill(200);
@@ -35,7 +35,7 @@ void mousePressed() {
 void mouseReleased() {
   redraw();
   //Draws te image in the background and stretches it to the window size
-  image(img, 0,0,900,900);
+  image(img, 0, 0, 900, 900);
   fill(0);
   //Places instructive text center, top of the draw window
   text("Ask another question.\n Hold to shake the 8-Ball.\n Release to reveal new asnwer.", width/2, 100);
@@ -53,7 +53,7 @@ void mouseReleased() {
 //Sets up the draw window per setup settings, then draws the 8-ball
 void draw() {
   //Draws te image in the background and stretches it to the window size
-  image(img, 0,0,900,900);
+  image(img, 0, 0, 900, 900);
   fill(0);
   //Places instructive text center, top of the draw window
   text("Ask a question.\n Then click to reveal your answer.", width/2, 100);
