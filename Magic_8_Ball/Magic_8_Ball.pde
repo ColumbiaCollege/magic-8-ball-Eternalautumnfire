@@ -3,12 +3,13 @@
 
 //Sets up an array of words that can appear in the magic 8-ball
 String[] Magic = {"That result\n is unlikely", "The possibility\n is endless", "I don't appreciate\n your question", "No cookies for you", "Pet me,\n then ask again", "That's just wrong!"};
-
+//Sets img as a variable
 PImage img;
 
 //Settings for the program such as, text alingment, size, backroound, and fill.
 void setup() {
   size(900, 900);
+  //calls the image housed within the local data folder specified in the ""
   img = loadImage ("Space.jpg");
   textAlign(CENTER, CENTER);
   textSize(20);
@@ -18,6 +19,7 @@ void setup() {
 //Redraws the 8-ball and begins cycling through possible answers to the question
 void mousePressed() {
   redraw();
+  //Draws te image in the background and stretches it to the window size
   image(img, 0,0,900,900);
   fill(0);
   ellipse(450, 450, width/2, height/2);
@@ -32,6 +34,7 @@ void mousePressed() {
 //reveals the answer to the question
 void mouseReleased() {
   redraw();
+  //Draws te image in the background and stretches it to the window size
   image(img, 0,0,900,900);
   fill(0);
   //Places instructive text center, top of the draw window
@@ -49,6 +52,7 @@ void mouseReleased() {
 }
 //Sets up the draw window per setup settings, then draws the 8-ball
 void draw() {
+  //Draws te image in the background and stretches it to the window size
   image(img, 0,0,900,900);
   fill(0);
   //Places instructive text center, top of the draw window
