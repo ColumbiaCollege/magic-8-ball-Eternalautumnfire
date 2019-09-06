@@ -3,12 +3,14 @@
 
 //Sets up an array of words that can appear in the magic 8-ball
 String[] Magic = {"That result\n is unlikely", "The possibility\n is endless", "I don't appreciate\n your question", "No cookies for you", "Pet me,\n then ask again", "That's just wrong!"};
+
 //"Acts like setting a variable" but stores the datatype "img" to be called/initialized later to load an image
 PImage img;
 
 //Settings for the program such as, text alingment, size, backroound, and fill.
 void setup() {
   size(900, 900);
+  
   //calls the image housed within the local data folder specified in the ""
   img = loadImage ("Space.jpg");
   textAlign(CENTER, CENTER);
@@ -19,6 +21,7 @@ void setup() {
 //Redraws the 8-ball and begins cycling through possible answers to the question
 void mousePressed() {
   redraw();
+  
   //Draws te image in the background and stretches it to the window size
   image(img, 0, 0, 900, 900);
   fill(0);
@@ -34,11 +37,14 @@ void mousePressed() {
 //reveals the answer to the question
 void mouseReleased() {
   redraw();
+  
   //Draws te image in the background and stretches it to the window size
   image(img, 0, 0, 900, 900);
   fill(0);
+  
   //Places instructive text center, top of the draw window
   text("Ask another question.\n Hold to shake the 8-Ball.\n Release to reveal new asnwer.", width/2, 100);
+  
   //"Opens" the 8-ball to reveal the answer
   ellipse(450, 450, width/2, height/2);
   fill(200);
@@ -46,17 +52,21 @@ void mouseReleased() {
   fill(#1400FF);
   triangle(325, 369, 450, 594, 575, 369);
   fill(255);
+  
   //Pulls words at random from the array to be displayed
   text(Magic[int (random(6))], width/2, 400);
   noLoop();
 }
 //Sets up the draw window per setup settings, then draws the 8-ball
 void draw() {
+  
   //Draws te image in the background and stretches it to the window size
   image(img, 0, 0, 900, 900);
   fill(0);
+  
   //Places instructive text center, top of the draw window
   text("Ask a question.\n Then click to reveal your answer.", width/2, 100);
+  
   //Code for drawing the 8-ball
   ellipse(450, 450, width/2, height/2);
   fill(255);
