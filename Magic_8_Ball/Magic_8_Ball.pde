@@ -1,4 +1,4 @@
-//Magic 8-ball Program
+//Magic 8-ball Program. Image Credit: Garden Galactic by Engles Espinoza|metal posters - Displate,https://displate.com/displate/656806
 //Jeremiah Wilson 05 Sept 2019
 
 //Sets up an array of words that can appear in the magic 8-ball
