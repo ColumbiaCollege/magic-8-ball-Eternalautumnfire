@@ -36,7 +36,7 @@ void mouseReleased() {
   fill(0);
   //Places instructive text center, top of the draw window
   text("Ask another question.\n Hold to shake the 8-Ball.\n Release to reveal new asnwer.", width/2, 100);
-  //Draws the revealed answer within the 8-ball
+  //"Opens" the 8-ball to reveal the answer
   ellipse(450, 450, width/2, height/2);
   fill(200);
   ellipse(500, 275, 75, 25);
